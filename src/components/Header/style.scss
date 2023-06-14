@@ -32,15 +32,12 @@
     gap: 0.5em;
     cursor: pointer;
     img {
-      height: 2.5em;
+      height: 3em;
     }
     p {
       font-size: 1.215rem;
       font-weight: 600;
-      background: var(--gradient);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: white;
     }
   }
   .menuItems {
@@ -65,10 +62,7 @@
       }
       cursor: pointer;
       &:hover {
-        background: var(--gradient);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: var(--teal-light);
       }
     }
   }

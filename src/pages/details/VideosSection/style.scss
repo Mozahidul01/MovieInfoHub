@@ -102,13 +102,13 @@
             .triangle {
               stroke-dashoffset: 0;
               opacity: 1;
-              stroke: var(--pink);
+              stroke: var(--teal-light);
               animation: trailorPlay 0.7s ease-in-out;
             }
 
             .circle {
               stroke-dashoffset: 0;
-              stroke: var(--pink);
+              stroke: var(--teal-light);
             }
           }
         }

@@ -127,6 +127,20 @@ export default function DetailsBanner({
                       )}
                     </div>
 
+                    {data?.spoken_languages && (
+                      <div className="info">
+                        <span className="text bold">Lenguage: </span>
+                        <span className="text">
+                          {data?.spoken_languages?.map((leng, i) => (
+                            <span key={i}>
+                              {leng.name}
+                              {data?.spoken_languages.length - 1 !== i && "| "}
+                            </span>
+                          ))}
+                        </span>
+                      </div>
+                    )}
+
                     {!creditsLoading && (
                       <>
                         {director?.length > 0 && (

@@ -96,7 +96,7 @@ export default function Header() {
             src={logo}
             alt=""
           />
-          <p>MovieInfoHub</p>
+          <p>Movie-Info Hub</p>
         </div>
 
         <ul className="menuItems">

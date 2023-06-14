@@ -28,7 +28,7 @@
         font-size: 1rem;
       }
       &:hover {
-        color: var(--orange);
+        color: var(--teal-light);
       }
     }
   }
@@ -60,8 +60,8 @@
       cursor: pointer;
       transition: all ease 0.3s;
       &:hover {
-        box-shadow: 0 0 0.625em var(--orange);
-        color: var(--orange);
+        box-shadow: 0 0 0.625em var(--teal-light);
+        color: var(--teal-light);
       }
     }
   }
