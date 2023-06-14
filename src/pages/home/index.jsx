@@ -3,7 +3,7 @@ import Popular from "./Popular";
 import TopRated from "./TopRated";
 import Trending from "./Trending";
 import Upcoming from "./Upcoming";
-import HeroBanner from "./heroBanner";
+import HeroBanner from "./HeroBanner";
 import "./style.scss";
 import { useDispatch } from "react-redux";
 import { setFilter, setSortBy } from "../../features/global/globalSlice";
