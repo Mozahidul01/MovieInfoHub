@@ -11,7 +11,7 @@ import "./style.scss";
 export default function ContentCard({ data, fromSearch, mediaType }) {
   const navigate = useNavigate();
   const posterUrl = data?.poster_path
-    ? `https://image.tmdb.org/t/p/original/${data?.poster_path}`
+    ? `https://image.tmdb.org/t/p/w500/${data?.poster_path}`
     : PosterFallback;
 
   return (
