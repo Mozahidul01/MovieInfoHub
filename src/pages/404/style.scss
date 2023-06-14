@@ -1,0 +1,37 @@
+.pageNotFound {
+  height: 90vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .bigText {
+      font-size: 9rem;
+      font-weight: 700;
+      color: var(--grey-light);
+    }
+    .smallText {
+      font-size: 2rem;
+      color: var(--grey);
+    }
+    .goHome {
+      margin-top: 2.5rem;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.5rem;
+      background: transparent;
+      border: 1px solid var(--grey-light);
+      border-radius: 0.215rem;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background: var(--black3);
+        border-color: var(--black2);
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.error {
+  min-height: 3.5em;
+  width: 20em;
+  max-width: 90%;
+  border-radius: 0.875rem;
+  padding: 1em 1.5em;
+  margin: 1em 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--red);
+
+  .icon__wrapper {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    font-size: 1rem;
+    color: #fff;
+  }
+}

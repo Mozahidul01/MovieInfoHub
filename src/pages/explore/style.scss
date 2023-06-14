@@ -1,0 +1,110 @@
+@import "../../mixins.scss";
+.explorePage {
+  min-height: 65dvh;
+  padding-top: 5em;
+  .resultNotFound {
+    font-size: 1.5rem;
+    color: var(--black-light);
+  }
+  .pageHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    flex-direction: column;
+    @include md {
+      flex-direction: row;
+    }
+  }
+  .pageTitle {
+    font-size: 1.5rem;
+    line-height: 2.125em;
+    color: white;
+    margin-bottom: 1.25em;
+    @include md {
+      margin-bottom: 0;
+    }
+  }
+  .filters {
+    display: flex;
+    gap: 0.625em;
+    flex-direction: column;
+    @include md {
+      flex-direction: row;
+    }
+    .react-select-container {
+      &.genresDD {
+        width: 100%;
+        @include md {
+          max-width: 31em;
+          min-width: 15.5em;
+        }
+      }
+      &.sortbyDD {
+        width: 100%;
+        flex-shrink: 0;
+        @include md {
+          width: 15.5em;
+        }
+      }
+      .react-select__control {
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+        background-color: transparent;
+        border: 1px solid var(--black-lighter);
+        border-radius: 0.215em;
+        .react-select__value-container {
+          .react-select__placeholder,
+          .react-select__input-container {
+            color: white;
+            margin: 0 0.625em;
+          }
+        }
+        .react-select__single-value {
+          color: white;
+        }
+        .react-select__multi-value {
+          background-color: var(--black3);
+          border-radius: 0.625em;
+          .react-select__multi-value__label {
+            color: white;
+          }
+          .react-select__multi-value__remove {
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            &:hover {
+              color: var(--black-lighter);
+            }
+          }
+        }
+      }
+      .react-select__menu {
+        top: 2.5em;
+        background-color: var(--black-light);
+        margin: 0;
+        padding: 0;
+
+        .react-select__option {
+          &--is-focused {
+            background-color: var(--black3);
+          }
+        }
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.625em;
+    margin-bottom: 3.125em;
+    @include md {
+      gap: 1.25em;
+    }
+    .movieCard {
+      .posterBlock {
+        margin-bottom: 1.875em;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.similarContent,
+.recommendatedContent {
+  width: 100%;
+  max-width: 75em;
+  margin: 0 auto;
+  padding: 0 1.25em;
+
+  .carousel-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1em;
+    font-weight: 500;
+  }
+}

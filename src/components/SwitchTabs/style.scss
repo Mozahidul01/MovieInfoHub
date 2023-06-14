@@ -1,0 +1,37 @@
+.switchingTabs {
+  height: 2.125em;
+  background-color: white;
+  border-radius: 1.25em;
+  padding: 0.125em;
+  .tabItems {
+    display: flex;
+    align-items: center;
+    height: 1.875em;
+    position: relative;
+    .tabItem {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 6.25rem;
+      color: var(--black);
+      font-size: 0.875rem;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      transition: color ease 0.3s;
+      &.active {
+        color: white;
+      }
+    }
+    .movingBg {
+      height: 1.875em;
+      width: 6.25rem;
+      border-radius: 0.9em;
+      background-image: var(--gradient);
+      position: absolute;
+      left: 0;
+      transition: left cubic-bezier(0.88, -0.35, 0.565, 1.35) 0.4s;
+    }
+  }
+}

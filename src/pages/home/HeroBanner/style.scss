@@ -1,0 +1,108 @@
+@import "../../../mixins.scss";
+
+.heroBanner {
+  width: 100%;
+  height: 60dvh;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  position: relative;
+  @include md {
+    height: 70dvh;
+  }
+  .backdrop-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    overflow: hidden;
+    .lazy-load-image-background {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+  .opacity-layer {
+    width: 100%;
+    height: 15em;
+    background: linear-gradient(180deg, rgba(4, 21, 45, 0) 0%, #04152d 80%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .heroBannerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    max-width: 50em;
+    margin: 0 auto;
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.875em;
+      @include md {
+        margin-bottom: 0;
+        font-size: 5.5rem;
+      }
+    }
+    .subTitle {
+      font-size: 1.125rem;
+      font-weight: 500;
+      margin-bottom: 2.5rem;
+      @include md {
+        font-size: 1.5rem;
+      }
+    }
+    .searchInput {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      input {
+        width: calc(100% - 6em);
+        height: 3rem;
+        background-color: var(--white);
+        color: var(--black);
+        outline: 0;
+        border: 0;
+        border-radius: 2em 0 0 2em;
+        padding: 0 1em;
+        font-size: 1rem;
+        font-weight: 500;
+        @include md {
+          width: calc(100% - 9em);
+          height: 3.5em;
+          font-size: 1.125rem;
+          padding: 0 2em;
+        }
+      }
+      button {
+        width: 6em;
+        height: 3em;
+        background: var(--gradient);
+        outline: 0;
+        border: 0;
+        border-radius: 0 2em 2em 0;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background: var(--gradient2);
+        }
+        @include md {
+          width: 9em;
+          height: 3.5em;
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}
