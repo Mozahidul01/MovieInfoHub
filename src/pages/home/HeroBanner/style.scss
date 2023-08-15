@@ -8,7 +8,7 @@
   align-items: center;
   position: relative;
   @include md {
-    height: 70dvh;
+    height: 80dvh;
   }
   .backdrop-img {
     width: 100%;
@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     opacity: 0.5;
-    overflow: hidden;
+      overflow: hidden;
     .lazy-load-image-background {
       width: 100%;
       height: 100%;
@@ -40,68 +40,64 @@
   .heroBannerContent {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     position: relative;
     max-width: 50em;
     margin: 0 auto;
-    .title {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 0.875em;
-      @include md {
-        margin-bottom: 0;
-        font-size: 5.5rem;
-      }
-    }
-    .subTitle {
-      font-size: 1.125rem;
-      font-weight: 500;
-      margin-bottom: 2.5rem;
-      @include md {
-        font-size: 1.5rem;
-      }
-    }
+    margin-top: -8em;
     .searchInput {
       display: flex;
       align-items: center;
       width: 100%;
+      box-shadow: 0px 15px 20px 5px rgba(0, 0, 0, 0.1);
       input {
         width: calc(100% - 6em);
         height: 3rem;
-        background-color: var(--white);
+        background-color: hsla(0, 0%, 93%, 0.7);
         color: var(--black);
         outline: 0;
         border: 0;
-        border-radius: 2em 0 0 2em;
-        padding: 0 1em;
+        border-radius: 0.5em 0 0 0.5em;
+        padding: 0 0.8em;
         font-size: 1rem;
         font-weight: 500;
         @include md {
           width: calc(100% - 9em);
           height: 3.5em;
           font-size: 1.125rem;
-          padding: 0 2em;
+          padding: 0 1em;
+        }
+
+        &::placeholder {
+          color: rgba(4, 21, 45, 0.7);
         }
       }
       button {
         width: 6em;
         height: 3em;
-        background: var(--gradient);
+        background: var(--gradient2);
         outline: 0;
         border: 0;
-        border-radius: 0 2em 2em 0;
+        border-radius: 0 0.5em 0.5em 0;
         font-size: 1rem;
         cursor: pointer;
-        transition: all 0.3s ease-in-out;
         &:hover {
-          background: var(--gradient2);
+          background: var(--gradient);
         }
         @include md {
           width: 9em;
           height: 3.5em;
           font-size: 1.125rem;
         }
+      }
+    }
+    .subTitle {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 400;
+      margin: 0.5rem;
+      @include md {
+        font-size: 1rem;
+        margin: 1rem;
       }
     }
   }

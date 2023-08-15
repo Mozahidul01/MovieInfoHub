@@ -9,7 +9,6 @@ import PosterFallBack from "../../assets/no-poster.png";
 import dayjs from "dayjs";
 import Wrapper from "../utils/Wrapper/wrapper";
 import Img from "./../utils/LazyLoadImg/Img";
-import CircleRating from "../CircleRating/CircleRating";
 import Genres from "../Genres/Genres";
 import "./style.scss";
 
@@ -82,7 +81,6 @@ export default function Carousel({ title, data, loading, type }) {
                 >
                   <div className="posterBlock">
                     <Img src={poster} />
-                    <CircleRating rating={item.vote_average.toFixed(1)} />
                     <Genres data={item.genre_ids.slice(0, 2)} />
                   </div>
                   <div className="textBlock">

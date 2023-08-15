@@ -92,6 +92,7 @@
     }
     .carouselItem {
       width: 7.8125em;
+      transition: all 300ms ease-in-out;
       cursor: pointer;
       @include md {
         width: calc(25% - 0.9em);
@@ -106,7 +107,7 @@
         aspect-ratio: 1 / 1.5;
         background-size: cover;
         background-position: center;
-        margin-bottom: 1.875em;
+        margin-bottom: 0.5em;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
@@ -117,25 +118,13 @@
           left: 0;
           width: 100%;
           height: 100%;
-          border-radius: 0.75em;
+          border-radius: 3px;
           overflow: hidden;
           img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
-          }
-        }
-        .circleRating {
-          width: 2.5em;
-          height: 2.5em;
-          position: relative;
-          top: 1.875em;
-          background-color: white;
-          flex-shrink: 0;
-          @include md {
-            width: 3.125em;
-            height: 3.125em;
           }
         }
         .genres {
@@ -147,18 +136,23 @@
             justify-content: flex-end;
           }
         }
+
+        &:hover {
+          transition: all 300ms ease-in-out;
+          opacity: 0.6;
+        }
       }
       .textBlock {
         color: white;
         display: flex;
         flex-direction: column;
         .title {
-          font-size: 0.875rem;
+          font-size: 1rem;
           margin-bottom: 0.5em;
           line-height: 1.5em;
           @include ellipsis(1);
           @include md {
-            font-size: 1.125rem;
+            font-size: 1.25rem;
           }
         }
         .date {

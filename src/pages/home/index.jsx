@@ -21,10 +21,12 @@ export default function Home() {
   return (
     <div className="homepage">
       <HeroBanner />
-      <Trending />
-      <Upcoming />
-      <Popular />
-      <TopRated />
+      <div className="homeContent">
+        <Trending />
+        <Upcoming />
+        <Popular />
+        <TopRated />
+      </div>
     </div>
   );
 }
