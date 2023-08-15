@@ -47,18 +47,15 @@ export default function Header() {
   }, [controlNavbar]);
 
   //Search Query handler
-  const searchQueryHandler = useCallback(
-    (event) => {
-      if (event.key === "Enter" && query.length > 0) {
-        navigate(`/search/${query}`);
-        setTimeout(() => {
-          setShowSearch(false);
-          setQuery("");
-        }, 500);
-      }
-    },
-    [query, navigate]
-  );
+  const searchQueryHandler = useCallback(() => {
+    if (query.length > 0) {
+      navigate(`/search/${query}`);
+      setTimeout(() => {
+        setShowSearch(false);
+        setQuery("");
+      }, 500);
+    }
+  }, [query, navigate]);
 
   //Searchbar open and close handler
   const openSearch = () => {
@@ -129,15 +126,17 @@ export default function Header() {
       {showSearch && (
         <div className="searchBar">
           <Wrapper>
-            <div className="searchInput">
+            <form
+              className="searchInput"
+              onSubmit={searchQueryHandler}
+            >
               <input
                 type="text"
                 placeholder="Search for a movie or tv show...."
                 onChange={(e) => setQuery(e.target.value)}
-                onKeyUp={searchQueryHandler}
               />
               <VscChromeClose onClick={() => setShowSearch(false)} />
-            </div>
+            </form>
           </Wrapper>
         </div>
       )}
