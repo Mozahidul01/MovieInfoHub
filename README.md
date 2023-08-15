@@ -81,6 +81,6 @@ Inside of your project, you'll see the following folders and files:
 
 ---
 
-Feel free to explore more of my projects on my [portfolio](https://mozahidul.netlify.app). For any inquiries or collaboration opportunities, you can reach out to me at [mmozahidul01@gmail.com](mailto:mmozahidul01@gmail.com).
+Feel free to explore more of my projects on my [portfolio](https://mozahidul01.netlify.app). For any inquiries or collaboration opportunities, you can reach out to me at [mmozahidul01@gmail.com](mailto:mmozahidul01@gmail.com).
 
 Please let me know if you need any further information or assistance.
