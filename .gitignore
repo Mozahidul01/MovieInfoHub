@@ -12,7 +12,6 @@ dist
 dist-ssr
 *.local
 
-vercel.json
 yarn.lock
 
 # Editor directories and files

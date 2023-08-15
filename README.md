@@ -79,4 +79,6 @@ Inside of your project, you'll see the following folders and files:
 └── vite.config.js
 ```
 
+---
+
 Please let me know if you need any further information or assistance.
